@@ -1,0 +1,28 @@
+.gauge { display: flex; flex-direction: column; gap: var(--s3); }
+.gauge__body { margin: 0 14px; position: relative; }
+.gauge__track {
+  position: relative; height: 40px; background: var(--soft-blue);
+  border: 1px solid var(--line); border-radius: var(--r-sm); overflow: visible;
+}
+.gauge__fill, .gauge__proj { position: absolute; top: 0; bottom: 0; }
+.gauge__fill { background: var(--blue); border-radius: 3px 0 0 3px; }
+.gauge__fill--over { background: #b45309; border-radius: 0; }
+.gauge__proj {
+  background: repeating-linear-gradient(135deg, rgba(27, 106, 168, 0.55) 0 4px, rgba(255, 255, 255, 0.9) 4px 8px);
+  border-top: 1px dashed var(--blue); border-bottom: 1px dashed var(--blue);
+}
+.gauge__budget { position: absolute; top: -8px; bottom: -8px; width: 3px; margin-left: -1px; background: var(--ink); }
+.gauge__scale { position: relative; height: 26px; margin-top: 6px; font-size: 0.75rem; color: var(--ink-muted); }
+.gauge__scale span { position: absolute; transform: translateX(-50%); padding-top: 8px; white-space: nowrap; }
+.gauge__scale span::before { content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 6px; background: var(--ink-muted); }
+.gauge__legend { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); font-size: var(--text-sm); color: var(--ink-muted); margin: 0; padding: 0; list-style: none; }
+.gauge__legend li { display: flex; align-items: center; gap: var(--s2); margin: 0; }
+.swatch { width: 16px; height: 12px; border-radius: 2px; border: 1px solid var(--line); display: inline-block; }
+.swatch--used { background: var(--blue); border-color: var(--blue); }
+.swatch--over { background: #b45309; border-color: #b45309; }
+.swatch--proj { background: repeating-linear-gradient(135deg, rgba(27, 106, 168, 0.55) 0 3px, #fff 3px 6px); border-color: var(--blue); }
+.swatch--budget { width: 3px; height: 16px; background: var(--ink); border: 0; }
+
+.chart-box { width: 100%; min-width: 0; }
+.chart-tooltip { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s2) var(--s3); font-size: var(--text-sm); box-shadow: var(--shadow); }
+.chart-tooltip p + p { margin-top: 2px; }

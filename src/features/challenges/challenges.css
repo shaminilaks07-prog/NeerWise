@@ -1,0 +1,4 @@
+.challenge-grid { display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.challenge { display: flex; flex-direction: column; gap: var(--s3); }
+.challenge__form { display: grid; gap: var(--s3); grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); align-items: end; }
+.mini-progress { display: flex; flex-direction: column; gap: var(--s1); min-width: 140px; }

@@ -1,0 +1,8 @@
+.scenario-result { display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); padding: var(--s4); border-radius: var(--r-md); background: var(--mint); border: 1px solid var(--ok-line); }
+.range-row { display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: var(--s4); align-items: center; }
+.range-row input[type='range'] { width: 100%; accent-color: var(--blue); min-height: 32px; }
+.calc-steps { display: flex; flex-direction: column; gap: var(--s3); padding-left: 1.4rem; }
+.calc-steps li { margin: 0; }
+.calc-steps code { background: var(--ice); border: 1px solid var(--line-soft); border-radius: var(--r-sm); padding: 1px 6px; font-size: 0.875em; font-family: inherit; }
+.week-legend { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0; padding: 0; list-style: none; font-size: var(--text-sm); color: var(--ink-muted); }
+.week-legend li { display: flex; align-items: center; gap: var(--s2); margin: 0; }

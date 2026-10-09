@@ -1,0 +1,6 @@
+.hero { display: grid; gap: var(--s5); grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; }
+.hero__lede { display: flex; flex-direction: column; gap: var(--s3); }
+.hero__lede p { max-width: 52ch; color: var(--ink-muted); }
+.alert-row { display: flex; flex-direction: column; gap: var(--s1); padding: var(--s3) 0; border-top: 1px solid var(--line-soft); }
+.alert-row:first-child { border-top: 0; padding-top: 0; }
+@media (max-width: 760px) { .hero { grid-template-columns: minmax(0, 1fr); } }

@@ -1,0 +1,42 @@
+:root {
+  /* Palette */
+  --ice: #eaf6ff;
+  --white: #ffffff;
+  --mint: #e8f7ef;
+  --soft-blue: #d9ecff;
+  --ink: #12304a;
+  --ink-muted: #41596e;
+  --line: #b9d1e5;
+  --line-soft: #d6e6f3;
+  --blue: #1b6aa8;
+  --blue-dark: #124e7d;
+  --ok: #1d6f45;
+  --ok-bg: #e8f7ef;
+  --ok-line: #9fd3b6;
+  --warn: #7f4a00;
+  --warn-bg: #fff1d0;
+  --warn-line: #e3b04b;
+  --danger: #a1222b;
+  --danger-bg: #fdecea;
+  --danger-line: #e3a3a7;
+
+  /* Type */
+  --font: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-xxl: 2rem;
+
+  /* Shape and space */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --shadow: 0 1px 2px rgba(18, 48, 74, 0.08);
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+}
